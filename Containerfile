@@ -13,15 +13,15 @@ LABEL \
 # Remove dev tools, Vim, Lutris, MangoHUD
 # Then install Firefox at the system level
 RUN \
-    rpm-ostree override remove \
-      gcc* \
-      clang* \
-      cmake* \
-      make* \
-      vim* \
-      lutris \
-      mangohud* \
-    && \
+#    rpm-ostree override remove \
+#      gcc* \
+#      clang* \
+#      cmake* \
+#      make* \
+#      vim* \
+#      lutris \
+#      mangohud* \
+#    && \
     rpm-ostree install \
       firefox \
     && \
