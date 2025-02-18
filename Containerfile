@@ -2,7 +2,7 @@
 FROM ghcr.io/ublue-os/bazzite:stable
 
 # KDE environment (kinoite). If you wanted GNOME, set this to "silverblue".
-ARG BASE_IMAGE_NAME="kinoite"
+ARG BASE_IMAGE_NAME="silverblue"
 
 LABEL \
   org.opencontainers.image.title="Raven Nest" \
