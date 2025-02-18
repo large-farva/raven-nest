@@ -25,6 +25,4 @@ RUN \
     rpm-ostree install \
       firefox \
     && \
-    /usr/libexec/containerbuild/cleanup.sh \
-    && \
     ostree container commit
