@@ -137,7 +137,7 @@ jobs:
           done
         env:
           COSIGN_PRIVATE_KEY: ${{ secrets.SIGNING_SECRET }}
-          # Only include if your cosign key has a passphrase
+          # cosign.key
           COSIGN_PASSWORD: ${{ secrets.COSIGN_PASSWORD }}
-          # For alpha features, but typically "false" or omitted
+          # PLACEHOLDER
           COSIGN_EXPERIMENTAL: "false"
