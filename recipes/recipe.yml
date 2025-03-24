@@ -3,13 +3,11 @@
 # image will be published to ghcr.io/<user>/<name>
 name: raven
 # description will be included in the image's metadata
-description: Raven
+description: "Raven - Simplified Bazzite-Gnome for AMD desktop."
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/ublue-os/silverblue-main
-image-version: 41 # latest is also supported if you want new updates ASAP
+image-version: latest
 
-# module configuration, executed in order
-# you can include multiple instances of the same module
 modules:
   - type: files
     files:
@@ -29,18 +27,26 @@ modules:
       - webapp-manager
       - tailscale
       - sunshine
+      - vim
+      - vim
+      - cockpit
+      - cockpit-networkmanager
+      - cockpit-podman
+      - cockpit-selinux
+      - cockpit-system
+      - cockpit-navigator
+      - cockpit-storaged
 
   - type: default-flatpaks
-    notify: true # Send notification after install/uninstall is finished (true/false)
-    system:
-      # If no repo information is specified, Flathub will be used by default
+    notify: true
+    system: # Default Flathub
       install:
         - org.mozilla.firefox
         - org.gnome.Loupe
         - com.spotify.Client
       remove:
         - org.gnome.eog
-    user: {} # Also add Flathub user repo, but no user packages
+    user: {}
 
-  - type: signing # this sets up the proper policy & signing files for signed images to work fully
+  - type: signing
 
