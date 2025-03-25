@@ -5,7 +5,7 @@ name: raven
 # description will be included in the image's metadata
 description: "Raven - Simplified Bazzite-Gnome for AMD desktop."
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/silverblue-main
+base-image: ghcr.io/ublue-os/bazzite-gnome
 image-version: latest
 
 modules:
