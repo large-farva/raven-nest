@@ -27,7 +27,6 @@ modules:
       - webapp-manager
       - tailscale
       - sunshine
-      - vim
       - cockpit
       - cockpit-networkmanager
       - cockpit-podman
