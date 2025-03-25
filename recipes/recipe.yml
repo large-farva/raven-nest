@@ -28,7 +28,6 @@ modules:
       - tailscale
       - sunshine
       - vim
-      - vim
       - cockpit
       - cockpit-networkmanager
       - cockpit-podman
