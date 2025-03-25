@@ -20,8 +20,6 @@ modules:
     install:
       - starship
     remove:
-      - firefox
-      - firefox-langpacks
       - waydroid
       - webapp-manager
       - tailscale
