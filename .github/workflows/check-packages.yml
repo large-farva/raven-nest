@@ -15,12 +15,12 @@ jobs:
 
       - name: Pull and Inspect Base Image
         run: |
-          podman pull ghcr.io/ublue-os/silverblue-main:41
+          podman pull ghcr.io/ublue-os/bazzite-gnome
 
       - name: List Installed RPM Packages
         run: |
-          podman run --rm ghcr.io/ublue-os/silverblue-main:41 rpm -qa | sort
+          podman run --rm ghcr.io/ublue-os/bazzite-gnome rpm -qa | sort
 
       - name: Check Specific Packages (cockpit example)
         run: |
-          podman run --rm ghcr.io/ublue-os/silverblue-main:41 rpm -qa | grep cockpit || echo "No cockpit-related packages installed"
+          podman run --rm ghcr.io/ublue-os/bazzite-gnome rpm -qa | grep cockpit || echo "No cockpit-related packages installed"
