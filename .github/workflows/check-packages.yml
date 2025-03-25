@@ -1,0 +1,26 @@
+name: Check Base Image Packages
+
+on:
+  workflow_dispatch:  # Allows manual triggering from GitHub UI
+
+jobs:
+  verify-packages:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Install Podman
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y podman
+
+      - name: Pull and Inspect Base Image
+        run: |
+          podman pull ghcr.io/ublue-os/silverblue-main:41
+
+      - name: List Installed RPM Packages
+        run: |
+          podman run --rm ghcr.io/ublue-os/silverblue-main:41 rpm -qa | sort
+
+      - name: Check Specific Packages (cockpit example)
+        run: |
+          podman run --rm ghcr.io/ublue-os/silverblue-main:41 rpm -qa | grep cockpit || echo "No cockpit-related packages installed"
