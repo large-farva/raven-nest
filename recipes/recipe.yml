@@ -27,9 +27,6 @@ modules:
       # Remote desktop and VNC.
       - gnome-remote-desktop
       - libvncserver
-      # Evolution
-      - evolution-data-server
-      - evolution-data-server-langpacks
       # Epiphany
       - epiphany-runtime
       # Speech synthesis and accessibility
