@@ -26,13 +26,13 @@ modules:
       # Remote desktop and VNC.
       - gnome-remote-desktop
       - libvncserver
-      # Speech synthesis and accessibility
-      - espeak-ng
+      # Accessability
+      - orca
+      - speech-dispatcher
       - speech-dispatcher-espeak-ng
+      - espeak-ng
       # Android
       - android-udev-rules
-      - ayaneo-platform
-      - ayn-platform
       - waydroid
       - waydroid-selinux
       # Fonts for languages other that English.
@@ -120,8 +120,6 @@ modules:
       - google-noto-sans-oriya-vf-fonts
       - google-noto-sans-sinhala-vf-fonts
       - google-noto-sans-sundanese-fonts
-      - google-noto-sans-symbols-2-fonts
-      - google-noto-sans-symbols-vf-fonts
       - google-noto-sans-tamil-vf-fonts
       - google-noto-sans-telugu-vf-fonts
       - google-noto-sans-thaana-vf-fonts
