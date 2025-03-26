@@ -29,13 +29,6 @@ modules:
       # Speech synthesis and accessibility
       - espeak-ng
       - speech-dispatcher-espeak-ng
-      # Samba
-      - cifs-utils
-      - cifs-utils-info
-      - libsmbclient
-      - libwbclient
-      - samba-client
-      - samba-client-libs
       # Android
       - android-udev-rules
       - ayaneo-platform
