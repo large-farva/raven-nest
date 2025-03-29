@@ -132,7 +132,6 @@ modules:
         - org.mozilla.firefox
         - org.gnome.Loupe
         - com.spotify.Client
-        - com.mattjakeman.ExtensionManager
         - com.discordapp.Discord
       remove:
         - org.gnome.eog
